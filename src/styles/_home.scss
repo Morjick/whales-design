@@ -1,0 +1,155 @@
+.main_screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+  @media(max-width: 800px) {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.main_screen_inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.main_screen_baner_inner {
+  position: relative;
+
+  img {
+    @media(max-width: 800px) {
+      width: 400px;
+    }
+  }
+}
+
+.main_baner_title {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50px);
+  font-size: 45px;
+
+  @media(max-width: 800px)  {
+    transform: translate(0, -50%);
+  }
+}
+
+.short_about {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.min_works_title {
+  margin-left: 40px;
+
+  @media(max-width: 800px) {
+    margin-left: 0;
+  }
+}
+
+.min_portfolio {
+  display: flex;
+}
+
+.subnav_home {
+  margin: 40px 0;
+
+  @media(max-width: 800px) {
+    padding: 0 20px;
+  }
+  @media(max-width: 600px) {
+    display: none;
+  }
+}
+
+.min_portfolio_item {
+  margin: 0 20px;
+
+  @media(max-width: 800px) {
+    margin: 0 10px;
+    padding: 10px;
+  }
+}
+
+.min_portfolio_item_label {
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  p {
+    position: relative;
+    transition: color .2s;
+
+    &::after {
+      content: '';
+      display: block;
+      background: $contrast;
+      width: 0;
+      height: 3px;
+      transition: all .2s;
+      bottom: -10px;
+      left: 0;
+    }
+
+    @media(max-width: 800px) {
+      font-size: 12px;
+    }
+  }
+
+  input:checked ~ p {
+    color: $contrast;
+
+    &::after {
+      width: 100%;
+    }
+  }
+  
+}
+
+.min_works_wrapper_inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.works_types {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media(max-width: 800px) {
+    .works_types_item {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.works_types_item {
+  img {
+    margin: 10px 0;
+    
+  }
+}
+
+.min_works_wrapper_btn {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.small_center {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 400;
+}

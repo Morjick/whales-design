@@ -1,0 +1,31 @@
+.page_404 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+  margin: 0 auto;
+
+  @media(max-width: 650px) {
+    display: block;
+  }
+}
+
+.page_404_info {
+  max-width: 270px;
+
+  @media(max-width: 650px) {
+    margin: 0 auto;
+  }
+}
+
+.page_404_img {
+  max-width: 450px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  @media(max-width: 650px) {
+    margin: 0 auto;
+  }
+}

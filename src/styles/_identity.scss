@@ -1,0 +1,48 @@
+.contrast_section {
+  width: 100vw;
+  background: $main;
+  padding: 70px 10px;
+  color: $light;
+
+  .subtitle {
+    color: $light;
+  }
+}
+
+.contrast_desc {
+  color: rgba($light, .8);
+  margin: 20px 0;
+}
+
+.contrast_list_section {
+  display: flex;
+
+  .custim_list {
+    margin-right: 150px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media(max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.custom_list_item {
+  position: relative;
+  margin: 25px 0 25px 50px ;
+  font-size: 15px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    background: $light;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+  }
+}

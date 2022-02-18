@@ -1,0 +1,38 @@
+.about_relative {
+  min-height: 500px;
+}
+
+.contact_screen_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media(max-width: 800px) {
+    display: none;
+  }
+}
+
+.contact_info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  text-align: left;
+
+  @media(max-width: 800px) {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 20px;
+  }
+}
+
+.about_massage_hrefs {
+  display: flex;
+
+  img {
+    margin: 0 10px;
+    background: $contrast;
+    border-radius: 50%;
+    padding: 15px;
+  }
+}

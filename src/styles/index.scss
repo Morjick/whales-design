@@ -1,0 +1,28 @@
+// color
+$light: #fff;
+$text: #1C1D28;
+$main: #5551F7;
+$contrast: #FF5C66;
+$dark: #1C1D28;
+$gray: #E8EDF6;
+
+// font-weight
+$lightW: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+
+
+@import './header';
+@import './footer';
+@import './reset';
+@import './vars';
+@import './home';
+@import './services';
+@import './about';
+@import './contact';
+@import './notFound';
+@import './logo';
+@import './stepSlider';
+@import './identity';

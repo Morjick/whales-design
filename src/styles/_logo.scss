@@ -1,0 +1,149 @@
+.logo_services_screen {
+  display: flex;
+  height: 500px;
+}
+
+.logo_screen_desc {
+  width: 50%;
+}
+
+.logo_price_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media(max-width: 770px) {
+    flex-direction: column; 
+  }
+}
+
+.price_item {
+  display: inline-block;
+  width: 33%;
+  height: 600px;
+  border: 1px solid $gray;
+  padding: 40px 30px;
+
+  @media(max-width: 1050px) {
+    padding: 15px;
+  }
+
+  @media(max-width: 770px) {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+.price_item_block {
+  display: block;
+  width: 100%;
+
+  @media(max-width: 1050px) {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+.price_item_avtive {
+  // box-shadow: 0 0 5px 3px $main;
+  border: 3px solid $main;
+}
+
+.price_item_inner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow-y: auto;
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .pool-btn {
+      margin: 0 auto;
+    }
+
+    .hr {
+      width: 100%;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba($light, .5);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($main, .5);
+  }
+}
+
+.price_name {
+  font-weight: bold;
+}
+
+.price_list {
+  text-align: left;
+  height: 250px;
+
+  @media(max-width: 950px) {
+    height: 300px;
+  }
+
+  @media(max-width: 400px) {
+    height: 350px;
+  }
+}
+
+.price_list_item {
+  padding: 10px 0 10px 30px;
+  position: relative;
+
+  &::before {
+    content: url('https://sun9-11.userapi.com/impg/MD5mKmDC3e81yzS17FaNdHOaUkW8Y3QYfuSD4A/qx6bU8cQ28w.jpg?size=16x11&quality=96&sign=180a7e362b9b0fc6b3ed488ce7415144&type=album');
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+  }
+}
+
+.price_list_item_bold {
+  font-weight: bold;
+}
+
+.logo_benefits_inenr {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  @media(max-width: 770px) {
+    flex-wrap: wrap;
+  }
+}
+
+.logo__benefits_item {
+  width: 220px;
+  height: auto;
+
+  @media(max-width: 770px) {
+    width: 40%;
+    margin: 20px auto;
+  }
+}
+
+.logo__benefits_item_img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 25px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
